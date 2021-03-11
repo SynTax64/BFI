@@ -12,6 +12,18 @@ public class F_SummeDerZahlen {
 	 *
 	 * For oder While -Anweisung verwenden.
 	 */
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int num = ZahlenAddition(scanner);
+		System.out.println(summe(num));
+	}
+
+	public static int ZahlenAddition(Scanner scanner) {
+		System.out.print("Geben Sie bitte ein, wie viele Zahlen miteinander addieren möchten: ");
+		int num = Integer.parseInt(scanner.nextLine());
+		return num;
+	}
+
 	public static int summe(int limit) {
 		int summe = 0;
 		for (int i = 1; i <= limit; i++) {
@@ -22,10 +34,4 @@ public class F_SummeDerZahlen {
 		return summe;
 	}
 
-	public static void main(String[] args) {
-		Scanner eingabe = new Scanner(System.in);
-		System.out.print("Geben Sie bitte ein, wie viele Zahlen miteinander addieren möchten: ");
-		int num = eingabe.nextInt();
-		System.out.println(summe(num));
-	}
 }
