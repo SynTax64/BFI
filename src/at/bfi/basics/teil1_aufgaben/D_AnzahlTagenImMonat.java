@@ -12,20 +12,33 @@ public class D_AnzahlTagenImMonat {
 	 * 
 	 */
 
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String monat = setMonat(input);
+		int jahresZahl = setYear(input);
+		System.out.println(tageImMonat(monat, jahresZahl));
+		input.close();
+	}
+
 	public static boolean isLeapYear(int year) {
 		int jahr = year;
 
 		return ((jahr % 4 == 0) && (jahr % 100 != 0)) || (jahr % 400 == 0);
 	}
 
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-
+	public static String setMonat(Scanner scanner) {
 		System.out.print("Geben Sie bitte einen Monat ein: ");
-		String monat = input.nextLine();
-		System.out.print("Geben Sie bitte eine Jahreszahl ein: ");
-		int jahresZahl = input.nextInt();
+		String monat = scanner.nextLine();
+		return monat;
+	}
 
+	public static int setYear(Scanner scanner) {
+		System.out.print("Geben Sie bitte eine Jahreszahl ein: ");
+		int jahr = Integer.parseInt(scanner.nextLine());
+		return jahr;
+	}
+
+	public static String tageImMonat(String monat, int year) {
 		int tage = 0;
 		String output = "%s hat %d Tage!";
 
@@ -40,7 +53,7 @@ public class D_AnzahlTagenImMonat {
 			tage = 31;
 			break;
 		case "Februar":
-			if (isLeapYear(jahresZahl)) {
+			if (isLeapYear(year)) {
 				tage = 29;
 			} else {
 				tage = 28;
@@ -55,7 +68,6 @@ public class D_AnzahlTagenImMonat {
 		default:
 			output = "Ein unbekannter Monat wurde eingegeben ";
 		}
-
-		System.out.printf(output, monat, tage);
+		return String.format(output, monat, tage);
 	}
 }
