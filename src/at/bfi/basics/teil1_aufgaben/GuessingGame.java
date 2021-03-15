@@ -3,7 +3,7 @@ package at.bfi.basics.teil1_aufgaben;
 import java.util.Random;
 import java.util.Scanner;
 
-public class GuesingGame {
+public class GuessingGame {
 
 	public static void guessingNumber(Scanner input, Random rnd) {
 		int counter;
