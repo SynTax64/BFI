@@ -1,8 +1,13 @@
 package at.bfi.basics.OOP;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class TaschenRechner {
+
+	InputStreamReader in = new InputStreamReader(System.in);
+	BufferedReader reader = new BufferedReader(in);
 
 	private double operand1;
 	private double operand2;
@@ -42,19 +47,40 @@ public class TaschenRechner {
 		this.operator = operator;
 	}
 
-	public void ersteZahlEinlesen(Scanner input) {
+	public void ersteZahlEinlesen(BufferedReader input) {
 		System.out.print("Geben Sie bitte die erste Zahl ein: ");
-		operand1 = Double.parseDouble(input.nextLine());
+		while (true) {
+			try {
+				operand1 = Double.parseDouble(input.readLine());
+				break;
+			} catch (IOException e) {
+				System.out.println("Sie müssen eine numerische Zahl eingeben!");
+			}
+			System.out.print("Geben Sie bitte die erste Zahl noch einmal ein: ");
+		}
 	}
 
-	public void zweiteZahlEinlesen(Scanner input) {
+	public void zweiteZahlEinlesen(BufferedReader input) {
 		System.out.print("Geben Sie bitte die zweite Zahl ein: ");
-		operand2 = Double.parseDouble(input.nextLine());
+		while (true) {
+			try {
+				operand2 = Double.parseDouble(input.readLine());
+				break;
+			} catch (IOException e) {
+				System.out.println("Sie müssen eine numerische Zahl eingeben!");
+			}
+			System.out.print("Geben Sie bitte die zweite Zahl noch einmal ein: ");
+		}
 	}
 
-	public void operatorEinlesen(Scanner input) {
-		System.out.print("Geben Sie bitte eine Operation ein:");
-		operator = input.nextLine().charAt(0);
+	public void operatorEinlesen(BufferedReader input) {
+		System.out.print("Geben Sie bitte eine gültige Operation ein:");
+		try {
+			operator = input.readLine().charAt(0);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	public boolean operationUeberpruefen(char operation) {
@@ -89,15 +115,6 @@ public class TaschenRechner {
 		}
 		System.out.println("Sie müssen einen gültigen Operator eingeben(+, -, *, /)!");
 		return false;
-	}
-
-	public void menuAusgeben() {
-		System.out.println("*****************************");
-		System.out.println("1. Die erste Zahl einstellen");
-		System.out.println("2. Die zweite Zahl einstellen");
-		System.out.println("3. Der Operator einstellen");
-		System.out.println("4. Berechnen");
-		System.out.println("*****************************");
 	}
 
 	public double addition(double o1, double o2) {
