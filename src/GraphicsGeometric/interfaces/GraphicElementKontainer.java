@@ -10,13 +10,11 @@ public class GraphicElementKontainer implements Kontainer {
 		counter = 0;
 	}
 
-	@Override
 	public void add(GraphicElement graphicElement) {
 		graphicElemente[counter++] = graphicElement;
 //		counter++;
 	}
 
-	@Override
 	public void remove(int i) {
 		GraphicElement[] tmpGE = new GraphicElement[graphicElemente.length - 1];
 
@@ -33,19 +31,11 @@ public class GraphicElementKontainer implements Kontainer {
 		graphicElemente = tmpGE;
 	}
 
-	@Override
 	public int size() {
 		return counter;
 	}
 
-	@Override
 	public GraphicElement get(int i) {
 		return graphicElemente[i];
 	}
-
-	@Override
-	public String toString() {
-		return null;
-	}
-
 }
