@@ -1,6 +1,6 @@
 package GraphicsGeometric.interfaces;
 
-public class GraphicElementKontainer extends Kontainer {
+public class GraphicElementKontainer implements Kontainer {
 
 	protected GraphicElement[] graphicElemente;
 	protected int counter;
