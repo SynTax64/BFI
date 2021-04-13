@@ -1,4 +1,4 @@
-package Bank_GUI_Swing_02;
+package AWT_SWING_NIO.Bank_GUI_Swing_02;
 
 import java.awt.Dimension;
 
@@ -37,8 +37,8 @@ public class MyTable extends JScrollPane {
 		JTable jTabel = new JTable(rowData, columnNames);
 
 		// Scrollbar definieren
-		setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
-		setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+//		setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+//		setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 
 		// Positionieren
 		setPreferredSize(new Dimension(400, 100));

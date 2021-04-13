@@ -1,4 +1,4 @@
-package Bank_GUI_07;
+package AWT_SWING_NIO.Bank_GUI_07;
 
 import java.awt.Button;
 import java.awt.Color;

@@ -1,4 +1,4 @@
-package BankDateienUndStream.Test;
+package AWT_SWING_NIO.BankDateienUndStream.Test;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

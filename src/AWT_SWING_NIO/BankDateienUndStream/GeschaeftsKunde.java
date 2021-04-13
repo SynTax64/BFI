@@ -1,4 +1,4 @@
-package BankDateienUndStream;
+package AWT_SWING_NIO.BankDateienUndStream;
 
 import java.io.Serializable;
 

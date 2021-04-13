@@ -1,4 +1,4 @@
-package BankDateienUndStream.Test;
+package AWT_SWING_NIO.BankDateienUndStream.Test;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

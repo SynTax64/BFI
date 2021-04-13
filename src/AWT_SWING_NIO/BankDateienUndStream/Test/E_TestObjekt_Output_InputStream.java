@@ -1,4 +1,4 @@
-package BankDateienUndStream.Test;
+package AWT_SWING_NIO.BankDateienUndStream.Test;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -6,9 +6,9 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import BankDateienUndStream.GeschaeftsKonto;
-import BankDateienUndStream.GeschaeftsKunde;
-import BankDateienUndStream.Kunde;
+import AWT_SWING_NIO.BankDateienUndStream.GeschaeftsKonto;
+import AWT_SWING_NIO.BankDateienUndStream.GeschaeftsKunde;
+import AWT_SWING_NIO.BankDateienUndStream.Kunde;
 
 //Thema: 				Stream und Ein/Ausgabe Dateien
 //Teil_5				ObjektOutputStream und ObjektInputStream (Abstrakte Klassen)
@@ -92,7 +92,7 @@ public class E_TestObjekt_Output_InputStream {
 		// speichern.
 		////////////////////////////////////////////////////////////////////
 
-		String dateiNameInput = "C:" + File.separator + "TEMPOR" + File.separator + "kunde.ser";
+		String dateiNameInput = "kunde.ser";
 
 		Kunde kunde_1 = new GeschaeftsKunde(new GeschaeftsKonto(323));
 

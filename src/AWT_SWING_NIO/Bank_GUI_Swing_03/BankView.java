@@ -1,4 +1,4 @@
-package Bank_GUI_Swing_03;
+package AWT_SWING_NIO.Bank_GUI_Swing_03;
 
 import java.awt.BorderLayout;
 import java.awt.Color;

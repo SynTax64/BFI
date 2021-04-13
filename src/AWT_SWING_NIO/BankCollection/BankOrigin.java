@@ -1,4 +1,4 @@
-package BankCollection;
+package AWT_SWING_NIO.BankCollection;
 
 //Aenderung von Schritt 1 mit Generics
 

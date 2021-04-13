@@ -1,4 +1,4 @@
-package Bank_GUI_Swing_03;
+package AWT_SWING_NIO.Bank_GUI_Swing_03;
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -25,7 +25,7 @@ public class Bank {
 
 		view.getB_ok().setActionCommand(ok);
 		view.getB_cancle().setActionCommand(cancle);
-		//
+
 		// Auf Buttons Ereignisse reagieren
 		// mit Anonyme Klassen
 

@@ -1,4 +1,4 @@
-package BankDateienUndStream;
+package AWT_SWING_NIO.BankDateienUndStream;
 
 //Aenderung von Schritt 1 mit Generics
 

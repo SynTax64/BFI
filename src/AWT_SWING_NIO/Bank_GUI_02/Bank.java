@@ -1,4 +1,4 @@
-package Bank_GUI_02;
+package AWT_SWING_NIO.Bank_GUI_02;
 
 public class Bank {
 
@@ -11,7 +11,5 @@ public class Bank {
 	public static void main(String[] args) throws Exception {
 
 		BankView view = new BankView();
-
 	}
-
 }

@@ -1,4 +1,4 @@
-package Bank_GUI_07;
+package AWT_SWING_NIO.Bank_GUI_07;
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -27,6 +27,7 @@ public class Bank {
 		view.getB_cancel().addActionListener(l -> System.out.println("cancel Button pressed"));
 
 		//
+
 		// WindowAdapter zum Schliessen des Fensters
 		view.addWindowListener(new WindowAdapter() {
 			@Override
@@ -37,5 +38,4 @@ public class Bank {
 		});
 
 	}
-
 }

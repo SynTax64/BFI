@@ -1,4 +1,4 @@
-package Bank_GUI_Swing_02;
+package AWT_SWING_NIO.Bank_GUI_Swing_02;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -114,7 +114,6 @@ class BankView extends JFrame {
 			e.printStackTrace();
 		}
 
-		//
 		pack();
 	}
 

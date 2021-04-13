@@ -1,4 +1,4 @@
-package Bank_GUI_Swing_02;
+package AWT_SWING_NIO.Bank_GUI_Swing_02;
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;

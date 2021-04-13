@@ -1,4 +1,4 @@
-package BankCollection;
+package AWT_SWING_NIO.BankCollection;
 
 public class GeschaeftsKonto extends Konto {
 

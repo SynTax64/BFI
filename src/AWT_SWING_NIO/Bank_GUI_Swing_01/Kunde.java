@@ -1,4 +1,4 @@
-package Bank_GUI_Swing_01;
+package AWT_SWING_NIO.Bank_GUI_Swing_01;
 
 public class Kunde {
 
@@ -7,7 +7,6 @@ public class Kunde {
 	private String password;
 
 	public Kunde(Long id, String email, String password) {
-		super();
 		this.id = id;
 		this.email = email;
 		this.password = password;
