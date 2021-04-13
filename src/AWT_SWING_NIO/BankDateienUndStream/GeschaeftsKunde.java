@@ -4,10 +4,7 @@ import java.io.Serializable;
 
 public class GeschaeftsKunde extends Kunde implements Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -269000061266459492L;
+	private static final long serialVersionUID = -8959989913384471689L;
 
 	public GeschaeftsKunde(Konto konto) {
 

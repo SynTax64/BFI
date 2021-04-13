@@ -120,5 +120,4 @@ public class E_TestObjekt_Output_InputStream {
 		// werden.
 		// sehen sie Kunde und konto -Klassen
 	}
-
 }

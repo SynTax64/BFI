@@ -4,10 +4,7 @@ import java.io.Serializable;
 
 public class Kunde implements Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -9210121294364869640L;
+	private static final long serialVersionUID = 4585061654440050992L;
 
 	private Konto konto;
 
