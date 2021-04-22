@@ -1,0 +1,54 @@
+{
+	"folders": {},
+	"connections": {
+		"28D418C9-49E8-3579-9C0D-179CAA376D7A-178ee94e023-6928ee8239d87760": {
+			"provider": "mysql",
+			"driver": "28D418C9-49E8-3579-9C0D-179CAA376D7A",
+			"name": "jdb12",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "train01.bfi.wien",
+				"port": "3306",
+				"database": "jdb12",
+				"url": "jdbc:mysql://train01.bfi.wien:3306/jdb12",
+				"home": "C:\\Program Files\\MySQL\\MySQL Router 8.0",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-serverTimezone@": "Europe/Vienna"
+				},
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	},
+	"drivers": {
+		"mysql": {
+			"28D418C9-49E8-3579-9C0D-179CAA376D7A": {
+				"provider": "mysql",
+				"id": "28D418C9-49E8-3579-9C0D-179CAA376D7A",
+				"name": "mySQL_BFI",
+				"class": "com.mysql.jdbc.Driver",
+				"url": "jdbc:mysql://train01.bfi.wien/test",
+				"port": "3306",
+				"custom": true,
+				"embedded": false,
+				"anonymous": false,
+				"allowsEmptyPassword": false,
+				"instantiable": true,
+				"libraries": {}
+			}
+		}
+	}
+}
